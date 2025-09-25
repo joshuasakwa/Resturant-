@@ -8,7 +8,8 @@ const menu={
         image:"/images/menu/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg",
         price:250,
      description:'strawberry cake piece',
-        category:'snack'
+     longDescription:'',   
+     category:'snack'
         
     },
 
@@ -17,6 +18,7 @@ const menu={
         image:'/images/menu/annie-spratt-Pk6nuEXu_Lo-unsplash.jpg',
         price:480,
         description:'FriedRice',
+        longDescription:'', 
         category:'food'
     },
 
@@ -25,6 +27,7 @@ const menu={
         image:'/images/menu/chad-montano-MqT0asuoIcU-unsplash.jpg',
         price:1200,
         description:'pizza large',
+        longDescription:'', 
         category:"snack"
     },
 
@@ -33,6 +36,7 @@ const menu={
         image:'/images/menu/danijela-prijovic-qits91IZv1o-unsplash.jpg',
         price:275,
         description:'Italian spaghetti ',
+        longDescription:'', 
         category:'food'
     },
      4:{
@@ -40,6 +44,7 @@ const menu={
         image:'/images/menu/ikhsan-baihaqi-pbc2wXbQYpI-unsplash.jpg',
         price: 355,
         description:'instant Noodles',
+        longDescription:'', 
         category:'food'
     },
 
@@ -48,6 +53,7 @@ const menu={
         image:'/images/menu/jacob-thomas-6jHpcBPw7i8-unsplash.jpg',
         price:800,
         description:'Black forest cake',
+        longDescription:'', 
         category:'Snack'
     },
 
@@ -56,6 +62,7 @@ const menu={
         image:'/images/menu/mae-mu-I7A_pHLcQK8-unsplash.jpg',
         price:220,
         description:'Burger',
+        longDescription:'', 
         category:'Snack'
     },
 
@@ -64,6 +71,7 @@ const menu={
         image:"/images/menu/randy-fath-SQ20tWzxXO0-unsplash.jpg",
         price:340,
         description:'Coffee , Toasts ,Orange juice , Oranges and Strawberries',
+        longDescription:'', 
         category:'food'
     },
 
@@ -72,6 +80,7 @@ const menu={
         image:'/images/menu/sama-hosseini-iOqJG1R__gA-unsplash.jpg',
         price:270,
         description:'French fries',
+        longDescription:'', 
         category:'Food'
     },
 
@@ -80,6 +89,7 @@ const menu={
         image:'/images/menu/jonny-caspari-sQNq223Rr54-unsplash.jpg',
         price:100,
         description:'Cocacola,Cocacola zero sugar,Fanta,Sprite,Pepsi ',
+        longDescription:'', 
         category:'drink'
     }
 
