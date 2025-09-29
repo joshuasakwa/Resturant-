@@ -1,18 +1,14 @@
 <script setup>
- const menuItem={
-    
-        name: "Cake",
-        image:"/images/menu/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg",
-        price:250,
-     description:'strawberry cake piece',
-        category:'snack'
-        
-    }
+ import { useMenuStore } from'../stores/menu';
+ const menuStore= useMenuStore()
+ const menuItem = menuStore.selectedMenuItem
+
   
 </script>
 
 <template>
-<v-container fluid class="d-flex fill height" align="centre">
+    <v-btn to="/menu" color="teal-lighten-1" variant="elevated" > back </v-btn>
+<v-container fluid class="d-flex fill height" >
     <v-row>
 
         <v-col md="6">
@@ -29,11 +25,36 @@
 
               <v-card-title>{{ menuItem.name }}</v-card-title>
               <v-card-subtitle>{{ menuItem.price }}</v-card-subtitle>
-              <v-card-text>{{ menuItem.description }}</v-card-text>
-              <v-card-text>Quantity<v-text-field></v-text-field></v-card-text>
+              <v-card-text>{{ menuItem.longDescription }}</v-card-text>
+              <v-card-text>
+                <v-row>
+                    <v-col md='2'>Quantity</v-col>
+                    <v-col md="4">
+                        <v-number-input
+                            control-variant='split'
+                            density="compact"
+                            :min="1"
+                            :max="10">
+                        </v-number-input>
+                    </v-col>
+
+                </v-row> </v-card-text>
               <v-card-actions>
-                <v-btn color="teal-lighten-1">Order</v-btn>
+                <v-btn color="teal-lighten-1" variant="elevated" >Order</v-btn>
               </v-card-actions>
+
+              <!--  review-->
+
+             </v-card>
+             <v-card class="pa-6 mt-3 rounded-lg">
+                <v-card-title >Reviews</v-card-title>
+                <v-rating
+                    hover
+                    :length="5"
+                    :size="43"
+                    :model-value="3"
+                    active-color="teal-lighten-1"
+                    />
 
              </v-card>
 
