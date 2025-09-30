@@ -3,7 +3,7 @@ import{ref}from'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter();
-const showpassword = ref(false)
+const showPassword = ref(false)
 
 
 // models
@@ -57,7 +57,7 @@ function login(){
                     <router-link to="/signUp">signup</router-link>
                 </v-card-text>
                 <v-card-actions>
-                    <v-btn color="white" variant="elevated" @click="Login()">Login</v-btn>
+                    <v-btn color="white" variant="elevated" @click="login()">Login</v-btn>
                 </v-card-actions>
             </v-card>
         </v-col>
